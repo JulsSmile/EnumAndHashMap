@@ -6,43 +6,7 @@ public class University{
     private String univerName;
     private List<Student> students;
 
-    public enum Faculty{
-        PSYCHOLOGY,
-        JAVALOGY,
-        SOCIALOGY,
-        POLITOLOGY
-    }
-
-    public enum Group{
-        PS1, PS2,
-        J1, J2, J3,
-        SO1, SO2, SO3,
-        PO1, PO3
-    }
-
-    public enum Course{
-        first("1-й курс"),
-        second("2-й курс"),
-        third("3-й курс"),
-        fousth("4-й курс");
-        private String course;
-
-        Course(String course) {
-            this.course = course;
-        }
-
-        public String getCourse() {
-            String course = "";
-            return course;
-        }
-
-        @Override
-        public String toString() {
-            return course;
-        }
-    }
-
-    public University(String univerName, List<Student> students) {
+       public University(String univerName, List<Student> students) {
         this.univerName = univerName;
         this.students = students;
     }
