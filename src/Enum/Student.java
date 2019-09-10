@@ -16,7 +16,12 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return firstName + lastName + id + faculty + course + group + address;
+        return "Student{" +
+                "id=" + id +
+                ", faculty='" + faculty + '\'' +
+                ", course=" + course +
+                ", group=" + group +
+                "} " + super.toString();
     }
 
     public Integer getId() {

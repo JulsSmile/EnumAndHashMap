@@ -1,12 +1,12 @@
 package Enum;
 
 public class Person {
-    protected String firstName;
-    protected String lastName;
-    protected String middleName;
-    protected Integer birsday;
-    protected String address;
-    protected Integer phoneNumber;
+    private String firstName;
+    private String lastName;
+    private String middleName;
+    private Integer birsday;
+    private String address;
+    private Integer phoneNumber;
 
     public Person(String firstName, String lastName, String middleName, Integer birsday, String address, Integer phoneNumber) {
         this.firstName = firstName;
@@ -19,12 +19,14 @@ public class Person {
 
     @Override
     public String toString() {
-        return firstName
-                + "\n" + lastName
-                + "\n" + middleName
-                + "\n" + birsday
-                + "\n" + address
-                + "\n" + phoneNumber;
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", birsday=" + birsday +
+                ", address='" + address + '\'' +
+                ", phoneNumber=" + phoneNumber +
+                '}';
     }
 
     public String getFirstName() {

@@ -6,14 +6,17 @@ public class University{
     private String univerName;
     private List<Student> students;
 
-       public University(String univerName, List<Student> students) {
+    public University(String univerName, List<Student> students) {
         this.univerName = univerName;
         this.students = students;
     }
 
     @Override
     public String toString() {
-        return univerName + "\n" + students + "\n";
+        return "University{" +
+                "univerName='" + univerName + '\'' +
+                ", students=" + students +
+                '}';
     }
 
     public String getStudentsList(String faculty) {
@@ -24,6 +27,10 @@ public class University{
             }
         }
         return result;
+    }
+
+    public List<Student> getStudentsList_(String faculty) {
+        return null;
     }
 
     public String getStudentsByFacultyAndGroup(String faculty, int group) {
