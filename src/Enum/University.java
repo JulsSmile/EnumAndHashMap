@@ -1,5 +1,6 @@
 package Enum;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class University{
@@ -30,8 +31,15 @@ public class University{
     }
 
     public List<Student> getStudentsList_(String faculty) {
+        ArrayList<Student> listOfStudentsByFaculty = new ArrayList<Student>();
+        for (Student student : students) {
+            if (student.getFaculty().equals(faculty)) {
+                return listOfStudentsByFaculty;
+            }
+        }
         return null;
     }
+
 
     public String getStudentsByFacultyAndGroup(String faculty, int group) {
         String result = "";

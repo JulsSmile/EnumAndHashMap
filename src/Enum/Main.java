@@ -22,10 +22,14 @@ public class Main{
         students.add(student3);
 
         University university = new University("КНТУ", students);
+
+
         System.out.println(university.getStudentsList("джавология"));
-        System.out.println("Students List By Faculty and Group: " + (university.getStudentsByFacultyAndGroup("джавология", 2)));
-        System.out.println("Students List By Group: " + (university.getStudentsListByGroup(5)));
-        System.out.println("Students List By Birsday: " + (university.getStudentsListByBirsday(10)));
+        System.out.println(university.getStudentsList_("физика"));
+
+//        System.out.println("Students List By Faculty and Group: " + (university.getStudentsByFacultyAndGroup("джавология", 2)));
+//        System.out.println("Students List By Group: " + (university.getStudentsListByGroup(5)));
+//        System.out.println("Students List By Birsday: " + (university.getStudentsListByBirsday(10)));
 
     }
 
