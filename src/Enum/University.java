@@ -1,6 +1,5 @@
 package Enum;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class University{
@@ -39,7 +38,6 @@ public class University{
         }
         return null;
     }
-
 
     public String getStudentsByFacultyAndGroup(String faculty, int group) {
         String result = "";
