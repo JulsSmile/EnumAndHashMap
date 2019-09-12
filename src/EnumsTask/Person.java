@@ -1,4 +1,4 @@
-package Enum;
+package EnumsTask;
 
 public class Person {
     private String firstName;

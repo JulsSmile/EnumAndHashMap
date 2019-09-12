@@ -1,4 +1,4 @@
-package Enum;
+package EnumsTask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +24,8 @@ public class Main{
         University university = new University("КНТУ", students);
 
 
-        System.out.println(university.getStudentsList("джавология"));
-        System.out.println(university.getStudentsList_("физика"));
+//        System.out.println(university.getStudentsList("джавология"));
+        System.out.println(university.getStudentsList_("джавология"));
 
 //        System.out.println("Students List By Faculty and Group: " + (university.getStudentsByFacultyAndGroup("джавология", 2)));
 //        System.out.println("Students List By Group: " + (university.getStudentsListByGroup(5)));

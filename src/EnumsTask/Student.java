@@ -1,4 +1,4 @@
-package Enum;
+package EnumsTask;
 
 public class Student extends Person{
     private Integer id;
