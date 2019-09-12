@@ -20,24 +20,18 @@ public class University{
                 '}';
     }
 
-    public String getStudentsList(String faculty) {
-        String result = "";
+    public List<Student> getStudentsList_(String faculty) {
+        ArrayList<Student> listOfStudentsByFaculty = new ArrayList<>();
         for (Student student : students) {
             if (student.getFaculty().equals(faculty)) {
-                result = result + student.getFirstName() + " " + student.getLastName() + "\n";
+                System.out.println(student.getLastName());
             }
         }
-        return result;
+        return students;
     }
 
-    public List<Student> getStudentsList_(String faculty) {
-        ArrayList<Student> listOfStudentsByFaculty = new ArrayList<Student>();
-        for (Student student : students) {
-            if (student.getFaculty().equals(faculty)) {
-                System.out.println(student.getLastName());;
-            }
-        }
-        return listOfStudentsByFaculty;
+    public List<Student> getStudentsListByFacultyAndGroup() {
+        return students;
     }
 
     public String getStudentsByFacultyAndGroup(String faculty, int group) {
