@@ -12,7 +12,7 @@ public class Main{
 
         Student student1 = new Student("Тимофей ", "Доронин ", "Иванович", 1986, "Дворцовая 10, кв.3", 8989239, 455, "джавология", 2, 2);
         Student student2 = new Student("Кырлы ", "Мырлы ", "Иgzdhhч", 1786, "Пушкина, кв.4", 8298939, 456, "физика", 2, 2);
-        Student student3 = new Student("Student ", "Ivanov ", "Ivanych ", 986, "Блока 6, кв.4", 89448939, 457, "джавология", 5, 5);
+        Student student3 = new Student("Ivan ", "Ivanov ", "Ivanych ", 986, "Блока 6, кв.4", 89448939, 457, "джавология", 5, 5);
 //        System.out.println("Student 1" + student1);
 //        System.out.println("Student 2" + student2);
 
@@ -24,10 +24,9 @@ public class Main{
         University university = new University("КНТУ", students);
 
 
-//        System.out.println(university.getStudentsList("джавология"));
-        System.out.println(university.getStudentsList_("джавология"));
+        System.out.println(university.getStudentsList_("физика"));
 
-//        System.out.println("Students List By Faculty and Group: " + (university.getStudentsByFacultyAndGroup("джавология", 2)));
+//        System.out.println("Students List By Faculty and Group: " + (university..getStudentsListByFacultyAndGroup("джавология", 2)));
 //        System.out.println("Students List By Group: " + (university.getStudentsListByGroup(5)));
 //        System.out.println("Students List By Birsday: " + (university.getStudentsListByBirsday(10)));
 

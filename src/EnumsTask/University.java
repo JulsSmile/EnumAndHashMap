@@ -3,7 +3,7 @@ package EnumsTask;
 import java.util.ArrayList;
 import java.util.List;
 
-public class University{
+public class University {
     private String univerName;
     private List<Student> students;
 
@@ -24,44 +24,42 @@ public class University{
         ArrayList<Student> listOfStudentsByFaculty = new ArrayList<>();
         for (Student student : students) {
             if (student.getFaculty().equals(faculty)) {
-                System.out.println(student.getLastName());
+                listOfStudentsByFaculty.add(student);
             }
         }
-        return students;
+        return listOfStudentsByFaculty;
     }
 
-    public List<Student> getStudentsListByFacultyAndGroup() {
-        return students;
-    }
-
-    public String getStudentsByFacultyAndGroup(String faculty, int group) {
-        String result = "";
+    public List<Student> getStudentsListByFacultyAndGroup(String faculty, String group) {
+        ArrayList<Student> StudentsListByFacultyAndGroup = new ArrayList<>();
         for (Student student : students) {
             if (student.getFaculty().equals(faculty)) {
-                if (student.getGroup().equals(group))
-                    result = result + student.getFirstName() + " " + student.getLastName() + "\n";
+                if (student.getGroup().equals(group)) {
+                    StudentsListByFacultyAndGroup.add(student);
+                }
             }
         }
-        return result;
+        return StudentsListByFacultyAndGroup;
     }
 
-    public String getStudentsListByGroup(Integer group) {
-        String result = "";
+    public List<Student> getStudentsListByGroup(Integer group) {
+        ArrayList<Student> StudentsListByGroup = new ArrayList<>();
         for (Student student : students) {
             if (student.getGroup().equals(group)) {
-                result = result + student.getFirstName() + " " + student.getLastName() + "\n";
+                StudentsListByGroup.add(student);
             }
         }
-        return result;
+        return StudentsListByGroup;
     }
 
-    public String getStudentsListByBirsday(Integer birsday) {
-        String result = "";
+
+    public List<Student> getStudentsListByBirsday(Integer birsday) {
+        ArrayList<Student> StudentsListByBirsday = new ArrayList<>();
         for (Student student : students) {
             if (student.getBirsday() > birsday) {
-                result = result + student.getFirstName() + " " + student.getLastName() + "\n";
+                StudentsListByBirsday.add(student);
             }
         }
-        return result;
+        return StudentsListByBirsday;
     }
 }
